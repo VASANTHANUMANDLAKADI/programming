@@ -1,0 +1,13 @@
+{
+    "Name":"Lee",
+    "RollNo":6,
+    "Age":25,
+    "Placed":true,
+    "Company":{
+        "name":"Dell",
+        "CTC": 7.5
+    },
+    "Skills":["NodeJs", "React","MernJS"]
+
+}
+
