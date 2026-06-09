@@ -1,4 +1,4 @@
-package main
+package secondlargest
 
 func secondLargest(num []int) int {
 	largest := num[0]					// Assigning 1st element in array as largest
