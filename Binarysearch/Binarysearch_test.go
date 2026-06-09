@@ -1,17 +1,15 @@
-package binary
+package binarysearch
 
-import "testing"
+import (
+	"testing"
+	"github.com/stretchr/testify/assert"
+)
 
 func TestBinarySearch(t *testing.T) {
 	arr := []int{7, 8, 24, 32, 34, 66, 76, 98}
+	target := 76
 
-	target := 34
-
-	result := binarySearch(arr, target)
-
-	if result != true {
-		t.Errorf("Expected true, got false")
-	}
+	assert.Equal(t, true, binarySearch(arr, target))
 }
 
 func TestBinarySearchNotFound(t *testing.T) {
@@ -19,9 +17,5 @@ func TestBinarySearchNotFound(t *testing.T) {
 
 	target := 100
 
-	result := binarySearch(arr, target)
-
-	if result != false {
-		t.Errorf("Expected false, got true")
-	}
+	assert.Equal(t, false, binarySearch(arr, target))
 }

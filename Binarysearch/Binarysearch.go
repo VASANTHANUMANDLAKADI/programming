@@ -1,4 +1,4 @@
-package binary
+package binarysearch
 
 func binarySearch(array []int, target int)bool {
 	left := 0
@@ -6,7 +6,7 @@ func binarySearch(array []int, target int)bool {
 
 	for left <= right {
 		mid := (left + right) / 2
-		if array[mid] == target {
+		if array[mid] == target { 
 			return true
 		}
 
