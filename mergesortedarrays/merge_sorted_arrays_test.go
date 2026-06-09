@@ -13,6 +13,3 @@ func TestMergesortedarrays(t *testing.T){
 	assert.Equal(t, expected, mergesortedarrays(a,b))
 }
 
-func mergesortedarrays(a []int, b []int) interface{} {
-	panic("unimplemented")
-}
