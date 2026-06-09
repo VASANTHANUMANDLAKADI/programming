@@ -1,4 +1,4 @@
-package main
+package anagram
 
 func Anagram(a string, b string)bool {
 	if len(a) != len(b) {			// checking weather both strings have equal lengths
