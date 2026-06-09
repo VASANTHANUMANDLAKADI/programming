@@ -1,18 +1,23 @@
 package main
-import "testing"
 
-func TestAnagram(t*testing.T) {
-	result := Anagram("care", "race")
+import (
+    "testing"
 
-	if result != true {
-		t.Errorf("Expected true, got false")
-	}
+    "github.com/stretchr/testify/assert"
+)
+
+func TestAnagram(t *testing.T) {
+    assert.Equal(t, true, Anagram("care", "race"))
 }
 
-func TestNotAnagram(t*testing.T){
-	result := Anagram("cat", "rat")
+func TestNotAnagram(t *testing.T) {
+    assert.Equal(t, false, Anagram("cat", "rat"))
+}
 
-	if result != false {
-		t.Errorf("Expected false, got true")
-	}
+func TestAnagramCaseSensitivity(t *testing.T) {
+    assert.Equal(t, false, Anagram("SiLenT", "lIstEn"))
+}
+
+func TestAnagramSpacesInString(t *testing.T) {
+    assert.Equal(t, false, Anagram("ca r e", "r a c e"))
 }
