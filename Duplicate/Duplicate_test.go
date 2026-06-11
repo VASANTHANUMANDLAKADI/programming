@@ -10,3 +10,24 @@ func TestRemoveDuplicate(t *testing.T){
 
 		assert.Equal(t, expected, removeDuplicates(array))
 }
+
+func TestEmptyArray(t *testing.T){
+		array := []int{}
+		expected := []int{}
+
+		assert.Equal(t, expected, removeDuplicates(array))
+}
+
+func AllDuplicate(t *testing.T){
+		array := []int{6,6,6,6,6,6,6,6,6,6}
+		expected := []int{6}
+
+		assert.Equal(t, expected, removeDuplicates(array))
+}
+
+func TestNoDuplicate(t *testing.T){
+		array := []int{1,2,3,4,5,6,7,8,9,0}
+		expected := []int{1,2,3,4,5,6,7,8,9,0}
+
+		assert.Equal(t, expected, removeDuplicates(array))
+}
