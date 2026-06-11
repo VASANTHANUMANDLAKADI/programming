@@ -1,19 +1,12 @@
-package main
-import "testing"
+package LargestNumber
+import (
+	"testing"
+	"github.com/stretchr/testify/assert"
+)
 
-func TestFindMax(t *testing.T) {
+func TestFindLargestNumber(t *testing.T) {
 
-	tests := []struct {
-		input    []int
-		expected int
-	}{{[]int{3, 7, 2, 9}, 9},{[]int{10, 5, 1}, 10},{[]int{2, 4, 8}, 8},}
+	array := []int{2,4,6,3,7,24}
 
-	for _, test := range tests {
-
-		result := FindMax(test.input)
-
-		if result != test.expected {
-			t.Errorf("Expected %d but got %d",test.expected,result,)
-		}
-	}
+	assert.Equal(t, 24, FindLargestNumber(array))
 }
