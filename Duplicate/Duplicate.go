@@ -1,4 +1,4 @@
-package main
+package RemoveDuplicate
 
 func removeDuplicates(array []int)[]int {
 	check := make(map[int]bool)
