@@ -1,6 +1,6 @@
 package binarysearch
 
-func binarySearch(array []int, target int)bool {
+func binarySearch(array[]int,target int)bool{
 	left := 0
 	right := len(array)-1
 
