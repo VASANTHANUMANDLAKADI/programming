@@ -1,4 +1,4 @@
-package LargestNumber
+package largestnumber
 import (
 	"testing"
 	"github.com/stretchr/testify/assert"
