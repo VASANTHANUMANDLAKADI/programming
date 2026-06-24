@@ -1,6 +1,11 @@
 package secondlargest
 
-func secondLargest(num []int) int {
+func secondLargest(num []int)int {
+
+	if len(num) < 2{
+		return -1
+	}
+
 	largest := num[0]					// Assigning 1st element in array as largest
 	secondLargest := num[0]
 
@@ -11,6 +16,7 @@ func secondLargest(num []int) int {
 		} else if num[i] > secondLargest && num[i] != largest {  // checking weather secondlargest is lesser than largest element
 			secondLargest = num[i]
 		}
+		
 	}
 
 	return secondLargest
