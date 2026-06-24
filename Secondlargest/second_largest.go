@@ -1,20 +1,20 @@
 package secondlargest
 
-func secondLargest(num []int)int {
+func secondLargest(nums []int)int {
 
-	if len(num) < 2{
+	if len(nums) < 2{
 		return -1
 	}
 
-	largest := num[0]					// Assigning 1st element in array as largest
-	secondLargest := num[0]
+	largest := nums[0]					// Assigning 1st element in array as largest
+	secondLargest := nums[0]
 
-	for i := 1; i < len(num); i++ {
-		if num[i] > largest {		// comparing the 1st elemtent in array with another elements in array
+	for i := 1; i < len(nums); i++ {
+		if nums[i] > largest {		// comparing the 1st elemtent in array with another elements in array
 			secondLargest = largest
-			largest = num[i]
-		} else if num[i] > secondLargest && num[i] != largest {  // checking weather secondlargest is lesser than largest element
-			secondLargest = num[i]
+			largest = nums[i]
+		} else if nums[i] > secondLargest && nums[i] != largest {  // checking weather secondlargest is lesser than largest element
+			secondLargest = nums[i]
 		}
 		
 	}
