@@ -1,9 +1,0 @@
-person:
-  name: Vasanth
-  age: 21
-  Skills:
-    - Go
-    - HTML
-    - CSS
-      placed: true
-      
